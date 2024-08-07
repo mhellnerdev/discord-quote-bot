@@ -1,0 +1,43 @@
+{
+  "name": "discord-quote-bot",
+  "version": "1.0.0",
+  "description": "A Discord bot for sending inspirational quotes and managing subscriptions.",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js",
+    "dev": "nodemon bot.js",
+    "lint": "eslint . --fix",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.57.0",
+    "@aws-sdk/client-sns": "^3.57.0",
+    "@aws-sdk/client-secrets-manager": "^3.57.0",
+    "@aws-sdk/lib-dynamodb": "^3.57.0",
+    "axios": "^0.27.2",
+    "discord.js": "^14.0.0",
+    "dotenv": "^16.0.1",
+    "winston": "^3.6.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.18.0",
+    "nodemon": "^2.0.15"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mhellnerdev/discord-quote-bot.git"
+  },
+  "keywords": [
+    "discord",
+    "bot",
+    "quotes",
+    "sns",
+    "dynamodb"
+  ],
+  "author": "Mark Hellner",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mhellnerdev/discord-quote-bot/issues"
+  },
+  "homepage": "https://github.com/mhellnerdev/discord-quote-bot#readme"
+}
